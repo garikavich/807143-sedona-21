@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Олег Гаркуша](https://up.htmlacademy.ru/adaptive/21/user/807143).
-* Наставник: `Неизвестно`.
+* Наставник: `Виктор Кан`.
 
 ---
 
