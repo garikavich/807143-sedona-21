@@ -23,36 +23,36 @@
         >
           X
         </button>
-        <ul class="page-header__nav-list">
-          <li class="page-header__nav-item">
-            <a href="index.html" class="page-header__nav-link">Главная</a>
+        <ul class="page-header__nav-list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link">Главная</a>
           </li>
-          <li class="page-header__nav-item">
-            <a href="catalog.html" class="page-header__nav-link">
+          <li class="site-list__item">
+            <a href="catalog.html" class="site-list__link">
               Фото и видео
             </a>
           </li>
-          <li class="page-header__nav-item">
-            <a class="page-header__nav-link">Форма отзыва</a>
+          <li class="site-list__item">
+            <a href="form.html" class="site-list__link">Форма отзыва</a>
           </li>
-          <li class="page-header__nav-item">
-            <a href="https://htmlacademy.ru" class="page-header__nav-link">
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru" class="site-list__link">
               htmlacademy
             </a>
           </li>
         </ul>
       </nav>
-      <div class="page-header__cover">
-        <img
-          src="https://via.placeholder.com/280x200"
-          alt="Описание обложки сайта Welcome to Sedona"
-          width="282"
-          height="241"
-        />
-      </div>
     </header>
     <main class="page-main">
-      <h1 class="visually-hidden">Оставить отзыв</h1>
+      <h1 class="visually-hidden">Оставить отзыв про городок Седона</h1>
+      <section class="cover">
+        <img
+          src="https://via.placeholder.com/230x40"
+          alt="Описание обложки сайта Welcome to Sedona"
+          width="229"
+          height="39"
+        />
+      </section>
       <section class="intro">
         <h2 class="intro__title">Оставьте свой отзыв</h2>
         <p class="intro__description">
@@ -61,93 +61,80 @@
         </p>
       </section>
       <section class="review">
-        <form action="" class="review__form">
-          <ul class="review__list">
-            <li class="review__item">
-              <fieldset>
-                <legend>
-                  Представьтесь:
-                </legend>
-                <label class="review__last-name">
-                  Имя:
-                  <input type="text" />
-                </label>
-                <label class="review__first-name">
-                  Фамилия:
-                  <input type="text" />
-                </label>
-                <label class="review__ patronymic">
-                  Отчество:
-                  <input type="text" />
-                </label>
-              </fieldset>
-            </li>
-            <li class="review__item">
-              <fieldset>
-                <legend>
-                  Контактная информация:
-                </legend>
-                <label class="review__number">
-                  Контактный телефон
-                  <input type="text" />
-                </label>
-                <label class="review__email">
-                  "Электронная почта":
-                  <input type="text" />
-                </label>
-              </fieldset>
-            </li>
-            <li class="review__item">
-              <fieldset>
-                <legend>
-                  Ваше общее впечатление:
-                </legend>
-                <label class="review__number">
-                  <input type="radio" value="like" name="review" checked />
-                  Скорее положительное
-                </label>
-                <label class="review__email">
-                  <input type="radio" value="dislike" name="review" />
-                  Скорее отрицательное
-                </label>
-                <label class="review__email">
-                  <input type="radio" value="non" name="review" />
-                  Затрудняюсь ответить
-                </label>
-              </fieldset>
-            </li>
-            <li>
-              <fieldset>
-                <legend>
-                  Посещенные достопримечательности:
-                </legend>
-                <label class="">
-                  <input type="checkbox" />
-                  Мост дьявола
-                </label>
-                <label class="">
-                  <input type="checkbox" />
-                  Гора-Колокол
-                </label>
-                <label class="">
-                  <input type="checkbox" />
-                  Слайд-парк
-                </label>
-                <label class="">
-                  <input type="checkbox" />
-                  Красные скалы
-                </label>
-              </fieldset>
-            </li>
-            <li>
-              <fieldset>
-                <legend>
-                  Опишите свои эмоции:
-                </legend>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-              </fieldset>
-            </li>
-          </ul>
+        <form action="" class="review__form form">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">
+              Представьтесь:
+            </legend>
+            <label class="form__last-name">
+              Имя: <input type="text" class= />
+            </label>
+            <label class="review__first-name">
+              Фамилия:
+              <input type="text" />
+            </label>
+            <label class="review__ patronymic">
+              Отчество:
+              <input type="text" />
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>
+              Контактная информация:
+            </legend>
+            <label class="review__number">
+              Контактный телефон
+              <input type="text" />
+            </label>
+            <label class="review__email">
+              "Электронная почта":
+              <input type="text" />
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>
+              Ваше общее впечатление:
+            </legend>
+            <label class="review__number">
+              <input type="radio" value="like" name="review" checked />
+              Скорее положительное
+            </label>
+            <label class="review__email">
+              <input type="radio" value="dislike" name="review" />
+              Скорее отрицательное
+            </label>
+            <label class="review__email">
+              <input type="radio" value="non" name="review" />
+              Затрудняюсь ответить
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>
+              Посещенные достопримечательности:
+            </legend>
+            <label class="">
+              <input type="checkbox" />
+              Мост дьявола
+            </label>
+            <label class="">
+              <input type="checkbox" />
+              Гора-Колокол
+            </label>
+            <label class="">
+              <input type="checkbox" />
+              Слайд-парк
+            </label>
+            <label class="">
+              <input type="checkbox" />
+              Красные скалы
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>
+              Опишите свои эмоции:
+            </legend>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </fieldset>
           <button type="submit" class="button">Отправить отзыв</button>
         </form>
       </section>
