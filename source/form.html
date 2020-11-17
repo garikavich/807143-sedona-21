@@ -61,79 +61,80 @@
         </p>
       </section>
       <section class="review">
-        <form action="" class="review__form form">
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">
+        <form action="" class="review__form">
+          <fieldset class="review__item form-present">
+            <legend class="form-present__title">
               Представьтесь:
             </legend>
-            <label class="form__last-name">
-              Имя: <input type="text" class= />
+            <label class="form-present__first-name">
+              Имя:
+              <input type="text" />
             </label>
-            <label class="review__first-name">
+            <label class="form-present__last-name">
               Фамилия:
               <input type="text" />
             </label>
-            <label class="review__ patronymic">
+            <label class="form-present__patronymic">
               Отчество:
               <input type="text" />
             </label>
           </fieldset>
-          <fieldset>
-            <legend>
+          <fieldset class="review__item form-contact">
+            <legend class="form-contact__title">
               Контактная информация:
             </legend>
-            <label class="review__number">
+            <label class="form-contact__number">
               Контактный телефон
               <input type="text" />
             </label>
-            <label class="review__email">
+            <label class="form-contact__email">
               "Электронная почта":
               <input type="text" />
             </label>
           </fieldset>
-          <fieldset>
-            <legend>
+          <fieldset class="review__item form-impression">
+            <legend class="form-impression">
               Ваше общее впечатление:
             </legend>
-            <label class="review__number">
+            <label class="form-impression__positive">
               <input type="radio" value="like" name="review" checked />
               Скорее положительное
             </label>
-            <label class="review__email">
+            <label class="form-impression__negative">
               <input type="radio" value="dislike" name="review" />
               Скорее отрицательное
             </label>
-            <label class="review__email">
+            <label class="form-impression__notknow">
               <input type="radio" value="non" name="review" />
               Затрудняюсь ответить
             </label>
           </fieldset>
-          <fieldset>
-            <legend>
+          <fieldset class="review__item form-attractions">
+            <legend class="form-attractions__item">
               Посещенные достопримечательности:
             </legend>
-            <label class="">
+            <label class="form-attractions__place1">
               <input type="checkbox" />
               Мост дьявола
             </label>
-            <label class="">
+            <label class="form-attractions__place2">
               <input type="checkbox" />
               Гора-Колокол
             </label>
-            <label class="">
+            <label class="form-attractions__place3">
               <input type="checkbox" />
               Слайд-парк
             </label>
-            <label class="">
+            <label class="form-attractions__place4">
               <input type="checkbox" />
               Красные скалы
             </label>
           </fieldset>
-          <fieldset>
-            <legend>
+          <fieldset class="review__item form-textarea">
+            <legend class="form-textarea__title">
               Опишите свои эмоции:
             </legend>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <textarea name="" id="" cols="30" rows="10" class="form-textarea__description"></textarea>
           </fieldset>
           <button type="submit" class="button">Отправить отзыв</button>
         </form>
