@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="inner-page">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="inner-page__body">
+    <header class="page-header">
+      <a class="page-header__logo logo">
+        <img
+          src="https://via.placeholder.com/100x80"
+          alt="Логотип с коричневыми горами и небом с облаками City of Sedona"
+          width="101"
+          height="84"
+        />
+      </a>
+      <nav class="page-header__nav">
+        <button
+          class="page-header__button-toggle"
+          type="button"
+          aria-label="Открыть меню"
+        >
+          X
+        </button>
+        <ul class="page-header__nav-list">
+          <li class="page-header__nav-item">
+            <a href="index.html" class="page-header__nav-link">Главная</a>
+          </li>
+          <li class="page-header__nav-item">
+            <a href="catalog.html" class="page-header__nav-link">
+              Фото и видео
+            </a>
+          </li>
+          <li class="page-header__nav-item">
+            <a class="page-header__nav-link">Форма отзыва</a>
+          </li>
+          <li class="page-header__nav-item">
+            <a href="https://htmlacademy.ru" class="page-header__nav-link">
+              htmlacademy
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="page-header__cover">
+        <img
+          src="https://via.placeholder.com/280x200"
+          alt="Описание обложки сайта Welcome to Sedona"
+          width="282"
+          height="241"
+        />
+      </div>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Оставить отзыв</h1>
+      <section class="intro">
+        <h2 class="intro__title">Оставьте свой отзыв</h2>
+        <p class="intro__description">
+          Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+          посещенных вами достопримечательностях
+        </p>
+      </section>
+      <section class="review">
+        <form action="" class="review__form">
+          <ul class="review__list">
+            <li class="review__item">
+              <fieldset>
+                <legend>
+                  Представьтесь:
+                </legend>
+                <label class="review__last-name">
+                  Имя:
+                  <input type="text" />
+                </label>
+                <label class="review__first-name">
+                  Фамилия:
+                  <input type="text" />
+                </label>
+                <label class="review__ patronymic">
+                  Отчество:
+                  <input type="text" />
+                </label>
+              </fieldset>
+            </li>
+            <li class="review__item">
+              <fieldset>
+                <legend>
+                  Контактная информация:
+                </legend>
+                <label class="review__number">
+                  Контактный телефон
+                  <input type="text" />
+                </label>
+                <label class="review__email">
+                  "Электронная почта":
+                  <input type="text" />
+                </label>
+              </fieldset>
+            </li>
+            <li class="review__item">
+              <fieldset>
+                <legend>
+                  Ваше общее впечатление:
+                </legend>
+                <label class="review__number">
+                  <input type="radio" value="like" name="review" checked />
+                  Скорее положительное
+                </label>
+                <label class="review__email">
+                  <input type="radio" value="dislike" name="review" />
+                  Скорее отрицательное
+                </label>
+                <label class="review__email">
+                  <input type="radio" value="non" name="review" />
+                  Затрудняюсь ответить
+                </label>
+              </fieldset>
+            </li>
+            <li>
+              <fieldset>
+                <legend>
+                  Посещенные достопримечательности:
+                </legend>
+                <label class="">
+                  <input type="checkbox" />
+                  Мост дьявола
+                </label>
+                <label class="">
+                  <input type="checkbox" />
+                  Гора-Колокол
+                </label>
+                <label class="">
+                  <input type="checkbox" />
+                  Слайд-парк
+                </label>
+                <label class="">
+                  <input type="checkbox" />
+                  Красные скалы
+                </label>
+              </fieldset>
+            </li>
+            <li>
+              <fieldset>
+                <legend>
+                  Опишите свои эмоции:
+                </legend>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+              </fieldset>
+            </li>
+          </ul>
+          <button type="submit" class="button">Отправить отзыв</button>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__info footer-info">
+        <a href="" class="footer-info__tag">#Visitsedona</a>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="" class="social__link social__link--twitter">
+              Мы в Твитере
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link social__link--facebook">
+              Мы в Фейсбуке
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link social__link--youtube">
+              Мы в Ютубе
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a
+          href="https://htmlacademy.ru/intensive/adaptive"
+          class="copyright__link"
+        >
+          HTML Academy
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
