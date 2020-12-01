@@ -1,0 +1,20 @@
+.site-list {
+  .reset-list();
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.site-list__item {
+  background-color: #81b3d2;
+}
+
+.site-list__link {
+  .link-reset();
+  text-align: center;
+  line-height: 40px;
+  transition: background .3s linear,color .3s linear;
+  &:hover {
+	background: #669ec0;
+  }
+}
