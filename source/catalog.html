@@ -3,18 +3,11 @@
   <head class="page">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>HTML Academy: Седона</title>
   </head>
   <body class="page-catalog">
-    <header class="page-header">
-      <a class="page-header__logo logo">
-        <img
-          src="https://via.placeholder.com/100x80"
-          alt="Логотип с коричневыми горами и небом с облаками City of Sedona"
-          width="101"
-          height="84"
-        />
-      </a>
+    <header class="page-header site-nav">
       <nav class="page-header__nav">
         <button
           class="page-header__button-toggle"
@@ -25,7 +18,7 @@
         </button>
         <ul class="page-header__nav-list site-list">
           <li class="site-list__item">
-            <a class="site-list__link">Главная</a>
+            <a href="index.html" class="site-list__link">Главная</a>
           </li>
           <li class="site-list__item">
             <a href="catalog.html" class="site-list__link">
@@ -41,72 +34,64 @@
             </a>
           </li>
         </ul>
+
+        <a class="page-header__logo logo">
+          <img
+            src="img/logotype-mobile.svg"
+            alt="Логотип с коричневыми горами и небом с облаками City of Sedona"
+            width="101"
+            height="84"
+          />
+        </a>
       </nav>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Каталог Седона с фото и видео</h1>
       <section class="cover">
         <img
-          src="https://via.placeholder.com/230x40"
+          class="cover__img"
+          src="img/sedona-logo.svg"
           alt="Описание обложки сайта Welcome to Sedona"
           width="229"
           height="39"
         />
       </section>
       <section class="intro">
-        <h2 class="into__title">
-          Фото и видео
-        </h2>
+        <h2 class="intro__title">Оставьте свой отзыв</h2>
         <p class="intro__description">
-          Не можете решиться на путешествие из-за курса? Фотографии помогут вам
-          забыть о политике и экономике.
+          Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+          посещенных вами достопримечательностях
         </p>
       </section>
       <section class="catalog">
         <ul class="catalog__list">
           <li class="catalog__item">
-            >
-            <img
-              src="https://via.placeholder.com/280x280"
-              alt=""
-              width="280"
-              height="280"
-            />
+            <img src="img/photo-1-mobile.png" alt="" width="280" height="280" />
             <div class="catalog__author-info">
               <p class="catalog__title">Неродные просторы</p>
               <cite class="catalog__author-name">Автор фото: Борис</cite>
-              <span class="catalog__like">1350</span>
+              <div><span class="catalog__like">1350</span></div>
             </div>
           </li>
           <li class="catalog__item">
-            <img
-              src="https://via.placeholder.com/280x280"
-              alt=""
-              width="280"
-              height="280"
-            />
+            <img src="img/photo-2-mobile.png" alt="" width="280" height="280" />
             <div class="catalog__author-info">
               <p class="catalog__title">Местная растительность</p>
               <cite class="catalog__author-name">Автор фото: Сергей</cite>
-              <span class="catalog__like">143</span>
+              <div><span class="catalog__like">143</span></div>
             </div>
           </li>
           <li class="catalog__item">
-            <img
-              src="https://via.placeholder.com/280x280"
-              alt=""
-              width="280"
-              height="280"
-            />
+            <img src="img/photo-3-mobile.jpg" alt="" width="280" height="280" />
             <div class="catalog__author-info">
               <p class="catalog__title">Дорога на север</p>
               <cite class="catalog__author-name">Автор фото: Петр</cite>
-              <span class="catalog__like">96</span>
+              <div><span class="catalog__like">96</span></div>
             </div>
           </li>
           <li class="catalog__item">
             <img
-              src="https://via.placeholder.com/280x280"
+              src="img/photo-4-desktop.png"
               alt=""
               width="280"
               height="280"
@@ -114,17 +99,17 @@
             <div class="catalog__author-info">
               <p class="catalog__title">Мост дьявола</p>
               <cite class="catalog__author-name">Автор фото: Антон</cite>
-              <span class="catalog__like">254</span>
+              <div><span class="catalog__like">254</span></div>
             </div>
           </li>
         </ul>
         <section class="video-showcase">
-          <h3>Все еще сомневаетесь?</h3>
-          <p>
+          <h3 class="video-showcase__title">Все еще сомневаетесь?</h3>
+          <p class="video-showcase__description">
             Смотрите видеопрезентацию и скорее за билетами, пока они не
             подорожали в очередной раз!
           </p>
-          <video src=""></video>
+          <video width="320" height="201" src="img/video-mobile.jpg"></video>
         </section>
       </section>
     </main>
@@ -135,18 +120,33 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a href="" class="social__link social__link--twitter">
-              Мы в Твитере
+            <a
+              href=""
+              class="social__link button button--social social__link--twitter"
+            >
+              <span class="visually-hidden">
+                Мы в Твитере
+              </span>
             </a>
           </li>
           <li class="social__item">
-            <a href="" class="social__link social__link--facebook">
-              Мы в Фейсбуке
+            <a
+              href=""
+              class="social__link button button--social social__link--facebook"
+            >
+              <span class="visually-hidden">
+                Мы в Фейсбуке
+              </span>
             </a>
           </li>
           <li class="social__item">
-            <a href="" class="social__link social__link--youtube">
-              Мы в Ютубе
+            <a
+              href=""
+              class="social__link button button--social social__link--youtube"
+            >
+              <span class="visually-hidden">
+                Мы в Ютубе
+              </span>
             </a>
           </li>
         </ul>
@@ -157,7 +157,12 @@
           href="https://htmlacademy.ru/intensive/adaptive"
           class="copyright__link"
         >
-          HTML Academy
+          <img
+            src="img/htmlacademy.svg"
+            width="27"
+            height="34"
+            alt="HTML ACADEMY"
+          />
         </a>
       </div>
     </footer>
