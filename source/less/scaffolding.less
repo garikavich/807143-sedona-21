@@ -6,9 +6,21 @@ body {
   font-size: @main-font-size;
   color: @main-color-black-lighten;
   background-color: @main-color-white;
-  overflow-x: hidden;
   line-height: 21px;
+  overflow-x: hidden;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+img {
+	max-width: 100%;
+	height: auto;
+  }
 
 .visually-hidden {
   position: absolute;
@@ -23,8 +35,12 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: @tablet-width-container;
-  padding: 0 15px;
+  max-width: @mobile-width;
+  padding: 0 20px;
+  @media (min-width: @tablet-width) {
+	  max-width: @tablet-width;
+	  padding: 0 40px;
+  }
 }
 
 

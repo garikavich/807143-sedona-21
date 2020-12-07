@@ -1,10 +1,18 @@
 .page-footer {
-	text-transform: uppercase;
-	text-align: center;
-
+  text-transform: uppercase;
+  text-align: center;
+  @media (min-width: 768px) {
+	display: flex;
+	justify-content: space-around;
+  }
 }
 
 .page-footer__info {
-	
-	
+}
+
+.page-footer__social {
+  .social__list {
+    display: flex;
+    justify-content: center;
+  }
 }

@@ -2,11 +2,29 @@
   font-size: 18px;
 }
 
+.page-header__nav {
+}
+
 .page-header__nav-list {
-  
+  .reset-list();
+  display: flex;
+  text-transform: uppercase;
+  @media (max-width: 767px) {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  @media (min-width: 767px) {
+    width: 100%;
+  }
 }
 
 .page-header__logo {
-	text-align: center;
-	display: block
+  text-align: center;
+  display: block;
+}
+
+.page-header__button-toggle {
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
