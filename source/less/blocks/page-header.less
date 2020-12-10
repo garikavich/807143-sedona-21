@@ -1,5 +1,15 @@
 .page-header {
+  max-width: 1200px;
+  min-width: 320px;
+  margin: 0 auto;
+  width: 100%;
+  background: #fff;
   font-size: 18px;
+  position: relative;
+  @media (min-width: 1200px) {
+    box-shadow: -7px 9px 15px -2px rgba(0, 1, 1, 0.2),
+      7px 9px 15px -2px rgba(0, 1, 1, 0.2);
+  }
 }
 
 .page-header__nav {
@@ -21,6 +31,12 @@
 .page-header__logo {
   text-align: center;
   display: block;
+  @media (min-width: 768px) {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+  }
 }
 
 .page-header__button-toggle {

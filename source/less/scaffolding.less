@@ -2,6 +2,7 @@ body {
   min-width: @mobile-width;
   margin: 0;
   padding: 0;
+  background: #f2f2f2;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: @main-font-size;
   color: @main-color-black-lighten;
@@ -16,11 +17,10 @@ body {
   box-sizing: border-box;
 }
 
-
 img {
-	max-width: 100%;
-	height: auto;
-  }
+  max-width: 100%;
+  height: auto;
+}
 
 .visually-hidden {
   position: absolute;
@@ -35,12 +35,12 @@ img {
 
 .container {
   margin: 0 auto;
-  max-width: @mobile-width;
+  max-width: 520px;
   padding: 0 20px;
-  @media (min-width: @tablet-width) {
-	  max-width: @tablet-width;
-	  padding: 0 40px;
-  }
+  //   @media (min-width: 768px) {
+  // 	max-width: 800px;
+  // }
+  //   @media (min-width: 1200px) {
+  // 	  max-width: 1200px;
+  //   }
 }
-
-
