@@ -1,3 +1,14 @@
+.form-present {
+	padding: 0 20px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 540px;
+	@media (min-width: 768px) {
+		order: 2;
+		width: 50%;
+		padding: 0;
+	}
+}
 .form-present__title {
 }
 
@@ -5,6 +16,9 @@
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+ 
 }
 
 .form-present__field {
@@ -16,4 +30,5 @@
   padding-top: 18px;
   padding-bottom: 14px;
   padding-left: 22px;
+  width: 100%;
 }
