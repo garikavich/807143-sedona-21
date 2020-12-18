@@ -1,5 +1,31 @@
+.form-attractions {
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 768px) {
+    order: 4;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  @media (min-width: 768px) {
+	max-width: 1200px;
+	justify-content: space-between;
+  }
+}
+
 .form-attractions__info {
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+  @media (min-width: 1200px) {
+    width: auto;
+  }
 }
