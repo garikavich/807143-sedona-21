@@ -1,19 +1,49 @@
 .search-hotel {
   text-align: center;
   text-transform: uppercase;
-  padding: 0 20px;
+  padding: 30px 20px 50px 20px;
   max-width: 500px;
   margin: 0 auto;
+  @media (min-width: 768px) {
+    padding-top: 66px;
+    padding-bottom: 58px;
+  }
+  @media (min-width: 1200px) {
+    padding-top: 45px;
+    padding-bottom: 68px;
+  }
 }
 
 .search-hotel__title {
   color: @main-color-black;
   line-height: 26px;
-  font-size: 18px;
+  font-size: 21px;
+  margin: 0;
+  padding: 14px;
+  @media (min-width: 768px) {
+    font-size: 30px;
+  }
 }
 
 .search-hotel__description {
   line-height: 24px;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 27px;
+  br {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+  @media (min-width: 768px) {
+    padding-top: 21px;
+    padding-bottom: 37px;
+  }
+  @media (min-width: 1200px) {
+    padding-bottom: 40px;
+    padding-top: 17px;
+  }
 }
 
 .search-hotel__button {

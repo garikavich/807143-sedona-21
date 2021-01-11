@@ -2,19 +2,45 @@
   text-transform: uppercase;
   text-align: center;
   width: 100%;
+  padding-top: 30px;
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-top: 26px;
+    padding-bottom: 31px;
+  }
+  @media (min-width: 1200px) {
+    justify-content: space-between;
   }
 }
 
 .page-footer__info {
+  margin-bottom: 30px;
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
+  @media (min-width: 1200px) {
+    margin-left: 119px;
+  }
 }
 
 .page-footer__social {
+  margin-bottom: 32px;
   .social__list {
     display: flex;
     justify-content: center;
+  }
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+
+.page-footer__copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (min-width: 1200px) {
+    margin-right: 122px;
   }
 }
