@@ -8,14 +8,13 @@
 </head>
 <body class="page__body">
 <div class="page-wrapper-container">
-  <header class="page-header site-nav">
-    <nav class="page-header__nav">
+  <header class="page-header">
+    <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
       <button
-        class="page-header__button-toggle"
+        class="page-header__button-toggle button"
         type="button"
         aria-label="Открыть меню"
       >
-        X
       </button>
       <ul class="page-header__nav-list site-list">
         <li class="site-list__item">
@@ -79,14 +78,14 @@
             </div>
             <div class="advantages__cover advantages__cover--block-1">
               <img
-                src="img/photo-city.jpg"
+                src="img/photo-city-desktop.jpg"
                 width="320"
                 height="260"
                 alt="Фрагмент городка Седона на корой размещен дом в стиле дикого запада и американский флаг"
               />
             </div>
             <ul class="advantages__features features-list">
-              <li class="features-list__item">
+              <li class="features-list__item features-list__item--housing">
                 <h4 class="feutures-list__title">
                   Жилье
                 </h4>
@@ -94,15 +93,15 @@
                   Рекомендуем пожить в настоящем мотеле, все как в кино!
                 </p>
               </li>
-              <li class="features-list__item">
+              <li class="features-list__item features-list__item--souvenir">
                 <h4 class="feutures-list__title">
                   Сувениры
                 </h4>
                 <p class="features-list__description">
-                  Не только китайского, но и местного производства!
+                  Не только китайского,<br> но и местного производства!
                 </p>
               </li>
-              <li class="features-list__item">
+              <li class="features-list__item features-list__item--food">
                 <h4 class="feutures-list__title">
                   Еда
                 </h4>
@@ -115,7 +114,7 @@
           <li class="advantages__item advantages__item--row-rewers">
             <div class="advantages__content advantages__content--inner-color advantages__content--block-2">
               <div class="container">
-                <h3 class="advantages__title">Там есть мост дьявола</h3>
+                <h3 class="advantages__title">Там есть<br> мост дьявола</h3>
                 <span class="advantages__number">№2</span>
                 <p class="advantages__description">
                   Да, по нему можно пройти! Если вы осмелитесь, конечно
@@ -124,14 +123,14 @@
             </div>
             <div class="advantages__cover advantages__cover--block-2">
               <img
-                src="img/photo-bridge.jpg"
+                src="img/photo-bridge-desktop.jpg"
                 width="320"
                 height="260"
                 alt="Фрагмент городка Седона на котором размещен красивый карьер мост дьявола"
               />
             </div>
           </li>
-          <li class="advantages__item advantages__item--block-small">
+          <li class="advantages__item advantages__item--block-small advantages__item--block-small-1">
             <div class="advantages__content">
               <h3 class="advantages__title">Небольшая площадь</h3>
               <span class="advantages__number">№3</span>
@@ -140,7 +139,7 @@
               </p>
             </div>
           </li>
-          <li class="advantages__item advantages__item--block-small">
+          <li class="advantages__item advantages__item--block-small advantages__item--block-small-2">
             <div class="advantages__content">
               <h3 class="advantages__title">Красивая дорога</h3>
               <span class="advantages__number">№4</span>
@@ -149,7 +148,7 @@
               </p>
             </div>
           </li>
-          <li class="advantages__item advantages__item--block-small">
+          <li class="advantages__item advantages__item--block-small advantages__item--block-small-3">
             <div class="advantages__content">
               <h3 class="advantages__title">Мало туристов</h3>
               <span class="advantages__number">№5</span>
@@ -163,7 +162,7 @@
     <section class="search-hotel">
       <h3 class="search-hotel__title">Заинтресовались?</h3>
       <p class="search-hotel__description">
-        Укажите предполагаемые даты поездки и мы покажем Вам лучшее
+        Укажите предполагаемые даты поездки <br> и мы покажем Вам лучшее
         предложения гостиниц в Седоне
       </p>
       <button class="search-hotel__button button button--primary">
@@ -172,7 +171,7 @@
     </section>
     <section class="map">
       <img
-        src="img/map-mobile.png"
+        src="img/map-desktop.jpg"
         alt="Карта местности Седона"
         width="320"
         height="350"
@@ -221,5 +220,6 @@
     </div>
   </footer>
 </div>
+<script src="js/script.js"></script>
 </body>
 </html>

@@ -5,10 +5,35 @@
   max-width: 520px;
   padding: 0 20px;
   margin: 0 auto;
+  @media (min-width: 768px) {
+    padding-bottom: 55px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  @media (min-width: 1200px) {
+    padding-bottom: 45px;
+  }
 }
 
 .intro__title {
   font-weight: 700;
   font-size: 18px;
+  margin: 0;
+  padding: 30px 10px 20px 10px;
   color: @main-color-black;
+  @media (min-width: 768px) {
+    font-size: 21px;
+    padding: 56px 5px 30px 5px;
+  }
+  @media (min-width: 1200px) {
+    padding-top: 66px;
+  }
+}
+
+.intro__description {
+  margin: 0;
+  padding: 14px 0;
+  @media (min-width: 768px) {
+    padding: 0;
+  }
 }

@@ -4,11 +4,20 @@
   align-items: center;
   justify-content: center;
   background-color: #c4c4c4;
+  height: 389px;
+  background-image: url('../img/back-mobile.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  @media (min-width: 768px) {
+    height: 506px;
+    background-image: url('../img/back-tablet.jpg');
+  }
 }
 
 .cover__img {
-	@media (min-width: 768px) {
-		width: 461px;
-		height: 350px;
-	  }
+  @media (min-width: 768px) {
+    width: 461px;
+    height: 350px;
+  }
 }
