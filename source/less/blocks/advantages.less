@@ -12,7 +12,9 @@
 
 .advantages__item {
   &--block-small {
-    padding-bottom: 53px;
+    @media (min-width: 768px) {
+		
+	}
     h3 {
       padding-top: 25px;
     }
@@ -73,12 +75,13 @@
     }
     &--block-small {
       padding: 11px 36px;
-      width: 33.3333%;
+	  width: 33.3333%;
+	  padding-bottom: 31px;
     }
   }
   @media (min-width: 1200px) {
     &--block-small {
-      padding-bottom: 55px;
+      padding-bottom: 53px;
     }
   }
 }

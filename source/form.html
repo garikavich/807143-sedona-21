@@ -8,15 +8,15 @@
   </head>
   <body class="inner-page__body">
     <div class="page-wrapper-container">
-      <header class="page-header site-nav">
-        <nav class="page-header__nav">
+      <header class="page-header">
+        <nav
+          class="page-header__nav page-header__nav--closed page-header__nav--nojs"
+        >
           <button
-            class="page-header__button-toggle"
+            class="page-header__button-toggle button"
             type="button"
             aria-label="Открыть меню"
-          >
-            X
-          </button>
+          ></button>
           <ul class="page-header__nav-list site-list">
             <li class="site-list__item">
               <a href="index.html" class="site-list__link">Главная</a>
@@ -71,19 +71,25 @@
                 Представьтесь:
               </legend>
               <label class="form-present__info">
-                Имя:
+                Имя
+                <sup>*</sup>
+                :
                 <input
                   class="form-present__field"
                   type=" text"
-                  placeholder="Имя"
+                  placeholder="Петр"
+                  required
                 />
               </label>
               <label class="form-present__info">
-                Фамилия:
+                Фамилия
+                <sup>*</sup>
+                :
                 <input
                   class="form-present__field"
                   type="text"
-                  placeholder="Фамилия"
+                  placeholder="Иванов"
+                  required
                 />
               </label>
               <label class="form-present__info">
@@ -91,7 +97,7 @@
                 <input
                   class="form-present__field"
                   type="text"
-                  placeholder="Отчество"
+                  placeholder="Александрович"
                 />
               </label>
             </fieldset>
@@ -100,12 +106,31 @@
                 Контактная информация:
               </legend>
               <label class="form-contact__info">
-                Контактный телефон
-                <input class="form-contact__field" type="text" />
+                <span>
+                  <span class="form-contact__hidden">Контактный</span> телефон
+                  <sup>*</sup>
+                  :
+                </span>
+                <input
+                  class="form-contact__field"
+                  type="text"
+                  required
+                  placeholder="Введите телефон"
+                />
+                <div></div>
               </label>
               <label class="form-contact__info">
-                Электронная почта:
-                <input class="form-contact__field" type="text" />
+                <span>
+                  Электронная почта
+                  <sup>*</sup>
+                  :
+                </span>
+                <input
+                  class="form-contact__field"
+                  type="text"
+                  placeholder="Введите e-mail"
+                />
+                <div></div>
               </label>
             </fieldset>
             <fieldset class="review__item form-impression">
@@ -120,6 +145,7 @@
                   name="review"
                   checked
                 />
+                <span></span>
                 Скорее положительное
               </label>
               <label class="form-impression__info">
@@ -130,6 +156,7 @@
                   name="review"
                 />
                 Скорее отрицательное
+                <span></span>
               </label>
               <label class="form-impression__info">
                 <input
@@ -139,26 +166,45 @@
                   name="review"
                 />
                 Затрудняюсь ответить
+                <span></span>
               </label>
             </fieldset>
             <fieldset class="review__item form-attractions">
               <legend class="review__title form-attractions__item">
-                Посещенные достопримечательности:
+                Посещенные
+                <br />
+                достопримечательности:
               </legend>
               <label class="form-attractions__info">
-                <input class="form-attractions__field" type="checkbox" />
-                Мост дьявола
+                <input
+                  class="form-attractions__field"
+                  type="checkbox"
+                  checked
+                />
+                <span></span>
+                Мост Дьявола
               </label>
               <label class="form-attractions__info">
-                <input class="form-attractions__field" type="checkbox" />
+                <input
+                  class="form-attractions__field"
+                  type="checkbox"
+                  checked
+                />
+                <span></span>
                 Гора-Колокол
               </label>
               <label class="form-attractions__info">
-                <input class="form-attractions__field" type="checkbox" />
+                <input
+                  class="form-attractions__field"
+                  type="checkbox"
+                  checked
+                />
+                <span></span>
                 Слайд-парк
               </label>
               <label class="form-attractions__info">
                 <input class="form-attractions__field" type="checkbox" />
+                <span></span>
                 Красные скалы
               </label>
             </fieldset>
@@ -169,11 +215,19 @@
               <textarea
                 name=""
                 id=""
-				class="form-textarea__description"
-				placeholder="Опишите подробно все свои эмоции"
+                class="form-textarea__description"
+                placeholder="Опишите подробно все свои восторги"
               ></textarea>
             </fieldset>
-            <button type="submit" class="button">Отправить отзыв</button>
+            <div class="review__wrapper-button">
+              <button
+                type="submit"
+                class="review__button button button--primary"
+              >
+                Отправить отзыв
+              </button>
+              <p class="review__text">* – Обязательные поля</p>
+            </div>
           </form>
         </section>
       </main>
@@ -231,5 +285,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
