@@ -1,15 +1,25 @@
 .form-impression {
-  padding: 0 20px;
   margin-left: auto;
   margin-right: auto;
   max-width: 540px;
   display: flex;
   flex-direction: column;
   @media (min-width: 768px) {
-	order: 1;
-	width: 50%;
-	text-align: left;
-	padding: 0;
+    order: 1;
+    width: 50%;
+    text-align: left;
+    padding: 0;
+  }
+}
+
+.form-impression__title {
+  text-transform: uppercase;
+  margin-bottom: 37px;
+  @media (min-width: 768px) {
+    margin-bottom: 74px;
+  }
+  @media (min-width: 1200px) {
+    padding-left: 80px;
   }
 }
 
@@ -17,4 +27,47 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+  margin-bottom: 43px;
+  padding-left: 65px;
+  cursor: pointer;
+  position: relative;
+  @media (min-width: 768px) {
+    margin-bottom: 53px;
+    padding-left: 74px;
+  }
+}
+
+.form-impression__info > .form-impression__field {
+  display: none;
+}
+
+.form-impression__info > .form-impression__field + * {
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+  }
+}
+
+.form-impression__info > .form-impression__field + *::before {
+  width: 55px;
+  height: 55px;
+  top: -14px;
+  left: 0;
+  background-color: #f2f2f2;
+}
+.form-impression__info > .form-impression__field + *::after {
+  top: 3px;
+  left: 17px;
+  width: 22px;
+  height: 22px;
+  background-color: #333333;
+  transform: scale(0);
+  transition: transform 0.3s ease;
+}
+
+.form-impression__info > .form-impression__field:checked + *::after {
+  transform: scale(1);
 }
