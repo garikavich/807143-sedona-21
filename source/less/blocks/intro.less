@@ -5,6 +5,12 @@
   max-width: 520px;
   padding: 0 20px;
   margin: 0 auto;
+  br {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
   @media (min-width: 768px) {
     padding-bottom: 55px;
     padding-left: 18px;
@@ -62,5 +68,31 @@
 .inner-page__body {
   .intro__description {
     padding-top: 0;
+  }
+}
+
+.page-catalog {
+  .intro {
+    @media (min-width: 768px) {
+      padding-bottom: 48px;
+    }
+  }
+  .intro__title {
+    font-size: 18px;
+    padding: 49px 10px 15px 10px;
+
+    @media (min-width: 768px) {
+      font-size: 30px;
+      padding: 48px 10px 37px 10px;
+    }
+    @media (min-width: 1200px) {
+      padding-top: 88px;
+    }
+  }
+}
+
+.page-catalog {
+  .intro__description {
+    padding-bottom: 28px;
   }
 }
