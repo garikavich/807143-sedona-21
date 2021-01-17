@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head class="page">
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="css/style.css"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" sizes="16x16" href="favicon-16.png">
   <title>HTML Academy: Седона</title>
 </head>
 <body class="page__body">
@@ -35,12 +37,16 @@
         </li>
       </ul>
       <a class="page-header__logo logo">
-        <img
-          src="img/logotype-mobile.svg"
-          alt="Логотип с коричневыми горами и небом с облаками City of Sedona"
-          width="101"
-          height="84"
-        />
+        <picture>
+          <source media="(min-width: 1200px)"
+                  srcset="img/logotype-desktop.svg">
+          <img
+            src="img/logotype-mobile.svg"
+            alt="Логотип с коричневыми горами и небом с облаками City of Sedona"
+            width="101"
+            height="84"
+          />
+        </picture>
       </a>
     </nav>
   </header>
@@ -77,12 +83,20 @@
               </div>
             </div>
             <div class="advantages__cover advantages__cover--block-1">
-              <img
-                src="img/photo-city-desktop.jpg"
-                width="320"
-                height="260"
-                alt="Фрагмент городка Седона на корой размещен дом в стиле дикого запада и американский флаг"
-              />
+              <picture>
+                <source media="(min-width: 1200px)"
+                        srcset="img/photo-city-desktop@1x.jpg 1x, img/photo-city-desktop@1x@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                        srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city-tablet@1x@2x.jpg 2x">
+                <img
+                  src="img/photo-city@1x.jpg"
+                  width="320"
+                  height="260"
+                  alt="Фрагмент городка Седона на корой размещен дом в стиле дикого запада и американский флаг"
+                  srcset="img/photo-city@1x1@2x.jpg 2x"
+                />
+              </picture>
+
             </div>
             <ul class="advantages__features features-list">
               <li class="features-list__item features-list__item--housing">
@@ -122,12 +136,19 @@
               </div>
             </div>
             <div class="advantages__cover advantages__cover--block-2">
-              <img
-                src="img/photo-bridge-desktop.jpg"
-                width="320"
-                height="260"
-                alt="Фрагмент городка Седона на котором размещен красивый карьер мост дьявола"
-              />
+              <picture>
+                <source media="(min-width: 1200px)"
+                        srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                        srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                <img
+                  src="img/photo-bridge.jpg"
+                  width="320"
+                  height="260"
+                  alt="Фрагмент городка Седона на корой размещен дом в стиле дикого запада и американский флаг"
+                  srcset="img/photo-bridge@2x.jpg 2x"
+                />
+              </picture>
             </div>
           </li>
           <li class="advantages__item advantages__item--block-small advantages__item--block-small-1">
@@ -175,6 +196,7 @@
         alt="Карта местности Седона"
         width="320"
         height="350"
+        srcset="img/map-desktop@2x.jpg 2x"
       />
     </section>
   </main>

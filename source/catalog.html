@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head class="page">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" sizes="16x16" href="favicon-16.png">
     <title>HTML Academy: Седона</title>
   </head>
   <body class="page-catalog">
@@ -16,9 +18,7 @@
             class="page-header__button-toggle button"
             type="button"
             aria-label="Открыть меню"
-          >
-            X
-          </button>
+          ></button>
           <ul class="page-header__nav-list site-list">
             <li class="site-list__item">
               <a href="index.html" class="site-list__link">Главная</a>
@@ -37,14 +37,19 @@
               </a>
             </li>
           </ul>
-
           <a class="page-header__logo logo">
-            <img
-              src="img/logotype-mobile.svg"
-              alt="Логотип с коричневыми горами и небом с облаками City of Sedona"
-              width="101"
-              height="84"
-            />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="img/logotype-desktop.svg"
+              />
+              <img
+                src="img/logotype-mobile.svg"
+                alt="Логотип с коричневыми горами и небом с облаками City of Sedona"
+                width="101"
+                height="84"
+              />
+            </picture>
           </a>
         </nav>
       </header>
@@ -70,12 +75,29 @@
         <section class="catalog">
           <ul class="catalog__list">
             <li class="catalog__item catalog__item--first-photo">
-              <img
-                src="img/photo-1-mobile.png"
-                alt=""
-                width="280"
-                height="280"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    img/photo-1-desktop.jpg    1x,
+                    img/photo-1-desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/photo-1-tablet.jpg    1x,
+                    img/photo-1-tablet@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="img/photo-1-mobile.jpg"
+                  alt=""
+                  width="280"
+                  height="280"
+                  srcset="img/photo-1-mobile@2x.jpg 2x"
+                />
+              </picture>
               <div class="catalog__author-wrapper">
                 <div class="catalog__author-info">
                   <p class="catalog__title">Неродные просторы</p>
@@ -85,12 +107,29 @@
               </div>
             </li>
             <li class="catalog__item">
-              <img
-                src="img/photo-2-mobile.png"
-                alt=""
-                width="280"
-                height="280"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    img/photo-2-desktop.jpg    1x,
+                    img/photo-2-desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/photo-2-tablet.jpg    1x,
+                    img/photo-2-tablet@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="img/photo-2-mobile.jpg"
+                  alt=""
+                  width="280"
+                  height="280"
+                  srcset="img/photo-2-mobile@2x.jpg 2x"
+                />
+              </picture>
               <div class="catalog__author-wrapper">
                 <div class="catalog__author-info">
                   <p class="catalog__title">Местная растительность</p>
@@ -100,12 +139,29 @@
               </div>
             </li>
             <li class="catalog__item">
-              <img
-                src="img/photo-3-mobile.jpg"
-                alt=""
-                width="280"
-                height="280"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    img/photo-3-desktop.jpg    1x,
+                    img/photo-3-desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/photo-3-tablet.jpg    1x,
+                    img/photo-3-tablet@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="img/photo-3-mobile.jpg"
+                  alt=""
+                  width="280"
+                  height="280"
+                  srcset="img/photo-3-mobile@2x.jpg 2x"
+                />
+              </picture>
               <div class="catalog__author-wrapper">
                 <div class="catalog__author-info">
                   <p class="catalog__title">Дорога на север</p>
@@ -115,12 +171,29 @@
               </div>
             </li>
             <li class="catalog__item">
-              <img
-                src="img/photo-4-desktop.png"
-                alt=""
-                width="280"
-                height="280"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    img/photo-4-desktop.jpg    1x,
+                    img/photo-4-desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/photo-4-tablet.jpg    1x,
+                    img/photo-4-tablet@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="img/photo-4-mobile.jpg"
+                  alt=""
+                  width="280"
+                  height="280"
+                  srcset="img/photo-4-mobile@2x.jpg 2x"
+                />
+              </picture>
               <div class="catalog__author-wrapper">
                 <div class="catalog__author-info">
                   <p class="catalog__title">Мост дьявола</p>
