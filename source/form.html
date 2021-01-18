@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head class="inner-page">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" sizes="16x16" href="favicon-16.png">
     <title>HTML Academy: Седона</title>
   </head>
   <body class="inner-page__body">
@@ -35,14 +37,19 @@
               </a>
             </li>
           </ul>
-
           <a class="page-header__logo logo">
-            <img
-              src="img/logotype-mobile.svg"
-              alt="Логотип с коричневыми горами и небом с облаками City of Sedona"
-              width="101"
-              height="84"
-            />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="img/logotype-desktop.svg"
+              />
+              <img
+                src="img/logotype-mobile.svg"
+                alt="Логотип с коричневыми горами и небом с облаками City of Sedona"
+                width="101"
+                height="84"
+              />
+            </picture>
           </a>
         </nav>
       </header>
