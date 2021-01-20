@@ -28,6 +28,7 @@
 
 .features-list__item {
   padding: 10px 0 0 50px;
+  position: relative;
   &.features-list__item--souvenir {
     @media (min-width: 768px) {
       padding-left: 32px;
@@ -35,6 +36,15 @@
     }
   }
   &--housing {
+    svg {
+      position: absolute;
+      left: 0;
+      top: 25px;
+      @media (min-width: 768px) {
+        width: 75px;
+        height: 72px;
+      }
+    }
     .feutures-list__title {
       padding: 23px 0 10px 0;
     }
@@ -50,6 +60,15 @@
     }
   }
   &--souvenir {
+    svg {
+      position: absolute;
+      left: 5px;
+      top: 2px;
+      @media (min-width: 768px) {
+        width: 76px;
+        height: 68px;
+      }
+    }
     br {
       display: none;
       @media (min-width: 1200px) {
@@ -70,6 +89,15 @@
     }
   }
   &--food {
+    svg {
+      position: absolute;
+      left: -3px;
+      top: 12px;
+      @media (min-width: 768px) {
+        width: 76px;
+        height: 68px;
+      }
+    }
     .feutures-list__title {
       padding: 5px 0 7px 0;
     }
@@ -84,6 +112,11 @@
   @media (min-width: 768px) {
     padding: 60px 36px 38px 36px;
     width: 33.33%;
+    svg {
+      left: 50%;
+      top: 62px;
+      transform: translateX(-50%);
+    }
     .feutures-list__title {
       padding: 0;
       padding-top: 100px;

@@ -1,22 +1,42 @@
 .cover {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #c4c4c4;
   height: 389px;
-  background-image: url('../../img/back-tablet.jpg');
+  background-image: url('../img/back-tablet.jpg');
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 27px;
+    background-image: url(../img/intro-triangle.svg);
+    background-repeat: no-repeat;
+	background-size: 100% 100%;
+	@media (min-width: 768px) {
+		background-image: url(../img/intro-triangle-tablet.svg);
+		height: 58px;
+	  }
+    @media (min-width: 1200px) {
+      background-image: url(../img/intro-triangle-desktop.svg);
+    }
+  }
   @media (min-resolution: 2dppx) {
-    background-image: url('../../img/back-tablet@2x.jpg');
+    background-image: url('../img/back-tablet@2x.jpg');
   }
   @media (min-width: 768px) {
     height: 517px;
-    background-image: url('../../img/back-desktop.jpg');
+    background-image: url('../img/back-desktop.jpg');
     @media (min-resolution: 2dppx) {
-      background-image: url('../../img/back-desktop@2x.jpg');
+      background-image: url('../img/back-desktop@2x.jpg');
     }
   }
 }
@@ -24,10 +44,17 @@
 .inner-page__body {
   .cover {
     height: 157px;
-    background-size: 570px;
+    background-image: url('../img/main/back-mobile-form.jpg');
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/main/back-mobile-form@2x.jpg');
+    }
     @media (min-width: 768px) {
+      background-image: url('../img/back-desktop.jpg');
       background-size: auto;
       height: 290px;
+      @media (min-resolution: 2dppx) {
+        background-image: url('../img/back-tablet@2x.jpg');
+      }
     }
     @media (min-width: 1200px) {
       height: 301px;
@@ -52,10 +79,17 @@
 .page-catalog {
   .cover {
     height: 155px;
-    background-size: 570px;
+    background-image: url('../img/main/back-mobile-form.jpg');
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/main/back-mobile-form@2x.jpg');
+    }
     @media (min-width: 768px) {
+      background-image: url('../img/back-desktop.jpg');
       height: 289px;
       background-size: auto;
+      @media (min-resolution: 2dppx) {
+        background-image: url('../img/back-tablet@2x.jpg');
+      }
     }
     @media (min-width: 1200px) {
       height: 302px;

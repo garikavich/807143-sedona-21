@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head class="page">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" sizes="32x32" href="favicon-32.png">
-    <link rel="icon" sizes="16x16" href="favicon-16.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" sizes="32x32" href="favicon-32.png" />
+    <link rel="icon" sizes="16x16" href="favicon-16.png" />
     <title>HTML Academy: Седона</title>
   </head>
   <body class="page-catalog">
@@ -77,6 +77,29 @@
             <li class="catalog__item catalog__item--first-photo">
               <picture>
                 <source
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                  srcset="
+                    img/photo-1-desktop.webp    1x,
+                    img/photo-1-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/photo-1-tablet.webp    1x,
+                    img/photo-1-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/photo-1-mobile.webp    1x,
+                    img/photo-1-mobile@2x.webp 2x
+                  "
+                />
+                <source
                   media="(min-width: 1200px)"
                   srcset="
                     img/photo-1-desktop.jpg    1x,
@@ -103,11 +126,39 @@
                   <p class="catalog__title">Неродные просторы</p>
                   <cite class="catalog__author-name">Автор фото: Борис</cite>
                 </div>
-                <div class="catalog__like"><span class="">1350</span></div>
+                <div class="catalog__like">
+                  <svg class="catalog__svg-icon" width="23" height="21">
+                    <use xlink:href="img/sprite.svg#like"></use>
+                  </svg>
+                  <span class="">1350</span>
+                </div>
               </div>
             </li>
             <li class="catalog__item">
               <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                  srcset="
+                    img/photo-2-desktop.webp    1x,
+                    img/photo-2-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/photo-2-tablet.webp    1x,
+                    img/photo-2-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/photo-2-mobile.webp    1x,
+                    img/photo-2-mobile@2x.webp 2x
+                  "
+                />
                 <source
                   media="(min-width: 1200px)"
                   srcset="
@@ -135,11 +186,39 @@
                   <p class="catalog__title">Местная растительность</p>
                   <cite class="catalog__author-name">Автор фото: Сергей</cite>
                 </div>
-                <div class="catalog__like"><span class="">143</span></div>
+                <div class="catalog__like">
+                  <svg class="catalog__svg-icon" width="23" height="21">
+                    <use xlink:href="img/sprite.svg#like"></use>
+                  </svg>
+                  <span class="">143</span>
+                </div>
               </div>
             </li>
             <li class="catalog__item">
               <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                  srcset="
+                    img/photo-3-desktop.webp    1x,
+                    img/photo-3-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/photo-3-tablet.webp    1x,
+                    img/photo-3-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/photo-3-mobile.webp    1x,
+                    img/photo-3-mobile@2x.webp 2x
+                  "
+                />
                 <source
                   media="(min-width: 1200px)"
                   srcset="
@@ -167,11 +246,39 @@
                   <p class="catalog__title">Дорога на север</p>
                   <cite class="catalog__author-name">Автор фото: Петр</cite>
                 </div>
-                <div class="catalog__like"><span class="">96</span></div>
+                <div class="catalog__like">
+                  <svg class="catalog__svg-icon" width="23" height="21">
+                    <use xlink:href="img/sprite.svg#like"></use>
+                  </svg>
+                  <span class="">96</span>
+                </div>
               </div>
             </li>
             <li class="catalog__item">
               <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                  srcset="
+                    img/photo-4-desktop.webp    1x,
+                    img/photo-4-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/photo-4-tablet.webp    1x,
+                    img/photo-4-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/photo-4-mobile.webp    1x,
+                    img/photo-4-mobile@2x.webp 2x
+                  "
+                />
                 <source
                   media="(min-width: 1200px)"
                   srcset="
@@ -199,7 +306,12 @@
                   <p class="catalog__title">Мост дьявола</p>
                   <cite class="catalog__author-name">Автор фото: Антон</cite>
                 </div>
-                <div class="catalog__like"><span class="">254</span></div>
+                <div class="catalog__like">
+                  <svg class="catalog__svg-icon" width="23" height="21">
+                    <use xlink:href="img/sprite.svg#like"></use>
+                  </svg>
+                  <span class="">254</span>
+                </div>
               </div>
             </li>
           </ul>
@@ -214,8 +326,47 @@
             <div class="video-showcase__wrap-video">
               <video class="video-showcase__video"></video>
               <div class="video-showcase__user-bar">
-                <div class="video-showcase__subcontent-bar"></div>
-                <div class="video-showcase__subcontent-controls"></div>
+                <div class="video-showcase__subcontent-bar">
+                  <span class="video-showcase__toggle"></span>
+                </div>
+                <div class="video-showcase__subcontent-controls">
+                  <button
+                    class="button video-showcase__raplay"
+                    aria-label="Повтор"
+                  >
+                    <svg
+                      class="video-showcase__icon-svg"
+                      width="23"
+                      height="21"
+                    >
+                      <use xlink:href="img/sprite.svg#raplay"></use>
+                    </svg>
+                  </button>
+                  <button
+                    class="button video-showcase__sub"
+                    aria-label="Субтитры"
+                  >
+                    <svg
+                      class="video-showcase__icon-svg"
+                      width="32"
+                      height="20"
+                    >
+                      <use xlink:href="img/sprite.svg#subtitr"></use>
+                    </svg>
+                  </button>
+                  <button
+                    class="button video-showcase__full"
+                    aria-label="На весь экран"
+                  >
+                    <svg
+                      class="video-showcase__icon-svg"
+                      width="20"
+                      height="20"
+                    >
+                      <use xlink:href="img/sprite.svg#full"></use>
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -232,6 +383,9 @@
                 href=""
                 class="social__link button button--social social__link--twitter"
               >
+                <svg width="17" height="15">
+                  <use xlink:href="img/sprite.svg#twitter"></use>
+                </svg>
                 <span class="visually-hidden">
                   Мы в Твитере
                 </span>
@@ -242,6 +396,9 @@
                 href=""
                 class="social__link button button--social social__link--facebook"
               >
+                <svg width="9" height="19">
+                  <use xlink:href="img/sprite.svg#facebook"></use>
+                </svg>
                 <span class="visually-hidden">
                   Мы в Фейсбуке
                 </span>
@@ -252,6 +409,9 @@
                 href=""
                 class="social__link button button--social social__link--youtube"
               >
+                <svg width="20" height="14">
+                  <use xlink:href="img/sprite.svg#youtube"></use>
+                </svg>
                 <span class="visually-hidden">
                   Мы в Ютубе
                 </span>

@@ -1,5 +1,25 @@
 .catalog {
   padding-top: 20px;
+  position: relative;
+  .catalog__svg-icon {
+	fill: #000;
+	opacity: .3;
+    @media (min-width: 1200px) {
+	  fill: #fff;
+	  opacity: 1;
+    }
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    border-top: 1px solid #e5e5e5;
+    display: block;
+    top: 0;
+    width: 100%;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
   @media (min-width: 768px) {
     padding: 0 60px;
   }
@@ -33,6 +53,24 @@
   margin-right: auto;
   padding-top: 21px;
   padding-bottom: 15px;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid #e5e5e5;
+    display: block;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+  @media (min-width: 768px) {
+    &:nth-child(3n) {
+      background-color: #eaeaea;
+    }
+  }
   &:not(:first-child) {
     @media (min-width: 768px) {
       .catalog__author-wrapper {
@@ -63,6 +101,7 @@
     max-width: 100%;
     margin-left: 0;
     margin-right: 0;
+    background-color: #f2f2f2;
   }
 
   @media (min-width: 1200px) {
@@ -143,6 +182,14 @@
   text-align: left;
   padding-top: 16px;
   padding-left: 37px;
+  position: relative;
+  svg {
+    position: absolute;
+    left: 0;
+    @media (min-width: 768px) {
+      left: -32px;
+    }
+  }
   @media (min-width: 768px) {
     padding-top: 4px;
     padding-left: 0px;
