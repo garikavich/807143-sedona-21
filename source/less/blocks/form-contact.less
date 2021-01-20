@@ -22,7 +22,25 @@
   text-transform: uppercase;
   padding-bottom: 20px;
   @media (min-width: 768px) {
-    padding-bottom: 10px;
+	padding-bottom: 10px;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	&:before,
+	&:after {
+		content: '';
+		flex-grow: 1;
+		flex-shrink: 0;
+		width: 30px;
+		height: 1px;
+		background-color: #DBDBDB;
+	}
+	&:before {
+		margin-right: 60px;
+	}
+	&:after {
+		margin-left: 60px;
+	}
   }
   @media (min-width: 1200px) {
     padding-top: 29px;
@@ -44,6 +62,22 @@
   flex-direction: column;
   text-align: left;
   position: relative;
+  &--phone {
+    svg {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 50%;
+    }
+  }
+  &--email {
+    svg {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 50%;
+    }
+  }
   &:first-of-type {
     @media (min-width: 1200px) {
       div {

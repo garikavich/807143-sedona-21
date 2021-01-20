@@ -16,14 +16,26 @@
 .review__item {
   border: none;
   text-align: center;
+  position: relative;
+  padding-right: 20px;
+  padding-left: 20px;
+  &:before {
+    content: '';
+    position: absolute;
+    border-top: 1px solid #e5e5e5;
+    top: 0;
+    width: 100%;
+    left: 0;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
   @media (min-width: 768px) {
     width: 50%;
   }
 }
 
 .review__form {
-  padding: 0 20px;
-  //   flex-direction: column;
   @media (min-width: 768px) {
     display: flex;
     flex-direction: row;
@@ -33,7 +45,11 @@
 }
 
 .review__wrapper-button {
+  padding-right: 20px;
+  padding-left: 20px;
   @media (min-width: 768px) {
+    padding-left: 0;
+    padding-right: 0;
     order: 8;
     display: flex;
     justify-content: space-between;
@@ -82,5 +98,3 @@
     padding-top: 13px;
   }
 }
-
-
