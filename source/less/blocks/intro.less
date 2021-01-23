@@ -3,20 +3,24 @@
   text-transform: uppercase;
   line-height: 26px;
   max-width: 520px;
-  padding: 0 20px;
+  padding: 0 20px 17px;
   margin: 0 auto;
+
   br {
     display: none;
+
     @media (min-width: 768px) {
       display: block;
     }
   }
+
   @media (min-width: 768px) {
     padding-bottom: 55px;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 16px;
+    padding-right: 16px;
     padding-top: 31px;
   }
+
   @media (min-width: 1200px) {
     padding-bottom: 45px;
   }
@@ -26,14 +30,29 @@
   .intro {
     line-height: 25px;
     padding-top: 4px;
-    padding-bottom: 4px;
+    padding-bottom: 12px;
+
     @media (min-width: 768px) {
       padding-bottom: 86px;
+      padding-left: 40px;
+      padding-right: 40px;
     }
+
     @media (min-width: 1200px) {
       padding-left: 41px;
       padding-right: 41px;
       padding-bottom: 57px;
+    }
+  }
+
+  .intro__title {
+    @media (min-width: 768px) {
+      font-size: 30px;
+      padding: 60px 5px 30px;
+    }
+
+    @media (min-width: 1200px) {
+      padding-top: 111px;
     }
   }
 }
@@ -42,69 +61,51 @@
   font-weight: 700;
   font-size: 18px;
   margin: 0;
-  padding: 30px 10px 20px 10px;
+  padding: 32px 10px 32px 10px;
   color: @main-color-black;
+
   @media (min-width: 768px) {
-    font-size: 21px;
     padding: 12px 5px 30px 5px;
+    font-size: 21px;
   }
+
   @media (min-width: 1200px) {
-    padding-top: 25px;
+    padding-top: 24px;
   }
 }
 
 .intro__description {
   margin: 0;
-  padding: 14px 0;
+  padding-top: 0;
+
   @media (min-width: 768px) {
     padding: 0;
-  }
-}
-
-.inner-page__body {
-  .intro__title {
-    padding-top: 32px;
-    padding-bottom: 26px;
-    @media (min-width: 768px) {
-      font-size: 30px;
-      padding-bottom: 30px;
-      padding-top: 61px;
-    }
-    @media (min-width: 1200px) {
-      padding-top: 111px;
-    }
-  }
-}
-
-.inner-page__body {
-  .intro__description {
-    padding-top: 0;
   }
 }
 
 .page-catalog {
   .intro {
     @media (min-width: 768px) {
-      padding-bottom: 48px;
+      padding-bottom: 59px;
       padding-top: 12px;
     }
   }
+
   .intro__title {
     font-size: 18px;
-    padding: 31px 10px 15px 10px;
+    padding: 31px 10px 28px 10px;
 
     @media (min-width: 768px) {
       font-size: 30px;
       padding: 48px 10px 37px 10px;
     }
+
     @media (min-width: 1200px) {
       padding-top: 88px;
     }
   }
-}
 
-.page-catalog {
   .intro__description {
-    padding-bottom: 28px;
+    padding-bottom: 15px;
   }
 }

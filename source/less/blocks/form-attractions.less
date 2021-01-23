@@ -1,10 +1,9 @@
 .form-attractions {
-//   margin-left: auto;
-//   margin-right: auto;
   max-width: 710px;
   width: 100%;
   display: flex;
   flex-direction: column;
+
   @media (min-width: 768px) {
     order: 4;
     width: 100%;
@@ -12,53 +11,52 @@
     flex-wrap: wrap;
     padding: 0;
   }
+
   @media (min-width: 1200px) {
     max-width: 1200px;
     justify-content: space-between;
   }
 }
 
-.form-attractions__field {
-  display: none;
-}
-
 .form-attractions__item {
   margin-bottom: 37px;
-  padding-top: 18px;
+  padding-top: 20px;
+
   @media (min-width: 768px) {
     padding-top: 42px;
     margin-bottom: 59px;
-	width: 100%;
-	display: flex;
-	align-items: center;
-    &:before,
-    &:after {
-      content: '';
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    &::before,
+    &::after {
+      content: "";
       flex-grow: 1;
       flex-shrink: 0;
       width: 30px;
       height: 1px;
       background-color: #dbdbdb;
     }
-    &:before {
+
+    &::before {
       margin-right: 60px;
     }
-    &:after {
+
+    &::after {
       margin-left: 60px;
     }
   }
+
   br {
-    display: none;
-    @media (min-width: 768px) {
-      display: block;
-    }
+    display: block;
   }
 }
 
 .form-attractions__info > .form-attractions__field + * {
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
   }
@@ -70,6 +68,23 @@
   top: -14px;
   left: 0;
   background-color: #f2f2f2;
+  transition: all 0.3s linear;
+}
+
+.form-attractions__info:hover > .form-attractions__field + *::before {
+  background-color: #e5e5e5;
+}
+
+.form-attractions__info:active > .form-attractions__field + *::before {
+  background-color: #d5d5d5;
+}
+
+.form-attractions__info > .form-attractions__field:focus + *::before {
+  background-color: #d5d5d5;
+}
+
+.form-attractions__info:active > .form-attractions__field:checked + *::before {
+  background-color: #d5d5d5;
 }
 
 .form-attractions__info > .form-attractions__field + *::after {
@@ -79,11 +94,16 @@
   height: 22px;
   transform: scale(0);
   transition: transform 0.3s linear;
-  background: url(../../img/tick.svg) no-repeat center;
+  background: url("../img/tick.svg") no-repeat center;
+  opacity: 1;
 }
 
 .form-attractions__info > .form-attractions__field:checked + *::after {
   transform: scale(1);
+}
+
+.form-attractions__info:active > .form-attractions__field:checked + *::after {
+  opacity: 0.3;
 }
 
 .form-attractions__info {
@@ -95,29 +115,34 @@
   padding-left: 79px;
   text-align: left;
   cursor: pointer;
+
   &:last-of-type {
     margin-bottom: 39px;
   }
+
   @media (min-width: 768px) {
     width: 215px;
     padding-bottom: 7px;
-	// margin-left: 43px;
-	&:nth-child(2n+1) {
-		margin-left: 43px
-	}
-	&:nth-child(2n) {
-		margin-left: 97px
-	}
 
+    &:nth-child(2n + 1) {
+      margin-left: 43px;
+    }
+
+    &:nth-child(2n) {
+      margin-left: 97px;
+    }
   }
+
   @media (min-width: 1200px) {
     width: auto;
-	margin-left: 0;
-	&:nth-child(2n+1) {
-		margin-left: 6px
-	}
-	&:nth-child(2n) {
-		margin-left: 0;
-	}
+    margin-left: 0;
+
+    &:nth-child(2n + 1) {
+      margin-left: 6px;
+    }
+
+    &:nth-child(2n) {
+      margin-left: 0;
+    }
   }
 }

@@ -1,0 +1,84 @@
+.popup-feilure {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 7px 15px rgba(0 1 1 0.15);
+  background: #ffffff;
+  padding: 39px 42px 35px 43px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 280px;
+  max-width: 400px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    padding: 54px 47px 86px 46px;
+    height: 347px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 33px 47px 49px 46px;
+  }
+
+  h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+
+    @media (min-width: 768px) {
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 40px;
+      margin: 0;
+      padding: 0 35px;
+    }
+
+    @media (min-width: 1200px) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 0 22px 0;
+    padding: 0;
+
+    @media (min-width: 768px) {
+      margin-top: 24px;
+      margin-bottom: 22px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 13px;
+    }
+
+    @media (min-width: 1200px) {
+      margin-bottom: 39px;
+    }
+  }
+
+  &--active {
+    display: block;
+  }
+}
+
+.popup-feilure__button {
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 180px;
+  margin-top: 25px;
+
+  @media (min-width: 768px) {
+    width: 272px;
+    margin-top: 0;
+  }
+}

@@ -4,14 +4,18 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 30px;
-  padding-bottom: 153px;
+  padding-bottom: 149px;
   position: relative;
+
   @media (min-width: 768px) {
-    padding-top: 64px;
+    padding-top: 70px;
     max-width: 768px;
   }
+
   @media (min-width: 1200px) {
     max-width: 800px;
+    padding-top: 61px;
+    padding-bottom: 156px;
   }
 }
 
@@ -22,6 +26,7 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+
   @media (min-width: 768px) {
     font-size: 30px;
   }
@@ -36,12 +41,14 @@
   text-transform: uppercase;
   padding-left: 40px;
   padding-right: 40px;
+
   @media (min-width: 768px) {
     margin-top: 33px;
     margin-bottom: 79px;
     padding-left: 155px;
     padding-right: 155px;
   }
+
   @media (min-width: 1200px) {
     padding-left: 170px;
     padding-right: 170px;
@@ -55,34 +62,40 @@
 
 .video-showcase__wrap-video {
   position: relative;
-  background-image: url('../../img/video-mobile.jpg');
+  background-image: url("../img/video-mobile.jpg");
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: flex-end;
   width: 320px;
   height: 205px;
   margin: 0 auto;
-  padding-bottom: 4px;
+  padding-bottom: 7px;
   background-origin: content-box;
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
+
   @media (min-resolution: 2dppx) {
-    background-image: url('../../img/video-mobile@2x.jpg');
+    background-image: url("../img/video-mobile@2x.jpg");
   }
+
   @media (min-width: 768px) {
-    background-image: url('../../img/video-tablet.jpg');
+    background-image: url("../img/video-tablet.jpg");
     width: 648px;
     height: 500px;
+
     @media (min-resolution: 2dppx) {
-      background-image: url('../../img/video-tablet@2x.jpg');
+      background-image: url("../img/video-tablet@2x.jpg");
     }
   }
+
   @media (min-width: 1200px) {
     width: 800px;
-    background-image: url('../../img/video-desktop.jpg');
+    background-image: url("../img/video-desktop.jpg");
+
     @media (min-resolution: 2dppx) {
-      background-image: url('../../img/video-desktop@2x.jpg');
+      background-image: url("../img/video-desktop@2x.jpg");
     }
   }
 }
@@ -91,10 +104,12 @@
   width: 280px;
   height: 111px;
   margin-bottom: -66px;
+
   @media (min-width: 768px) {
     width: 100%;
     margin-bottom: -22px;
   }
+
   @media (min-width: 1200px) {
     margin-bottom: -18px;
   }
@@ -105,28 +120,36 @@
   padding: 22px 23px 22px 22px;
   height: 45px;
   background: rgba(0, 0, 0, 0.6);
-  &:before {
-    content: '';
+
+  &::before {
+    content: "";
     position: absolute;
     display: block;
     width: 236px;
     height: 3px;
     background: rgba(255, 255, 255, 0.2);
+
     @media (min-width: 768px) {
       width: 389px;
     }
+
+    @media (min-width: 1200px) {
+      width: 540px;
+    }
   }
+
   @media (min-width: 768px) {
     height: 91px;
     position: absolute;
-    bottom: 0;
+    bottom: 6px;
     left: 0;
     right: 0;
     padding: 45px 166px 45px 93px;
   }
+
   @media (min-width: 1200px) {
-	height: 92px;
-	bottom: 4px;
+    height: 92px;
+    bottom: 4px;
   }
 }
 
@@ -137,12 +160,14 @@
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background: #fff;
+  background: #ffffff;
   cursor: pointer;
+
   @media (min-width: 768px) {
     top: 42px;
-    left: 120px;
+    left: 206px;
   }
+
   @media (min-width: 1200px) {
     left: 205px;
   }
@@ -150,15 +175,39 @@
 
 .video-showcase__subcontent-controls {
   display: flex;
+  flex-wrap: wrap;
   padding: 23px 23px 23px 25px;
   height: 66px;
   background: #f2f2f2;
+
   .video-showcase__icon-svg {
     fill: #5c6870;
+
+    &:hover {
+      fill: #333333;
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
     @media (min-width: 768px) {
-      fill: #fff;
+      fill: #ffffff;
+      opacity: 1;
+
+      &:hover {
+        fill: #ffffff;
+        opacity: 0.6;
+      }
+
+      &:active {
+        fill: #ffffff;
+        opacity: 0.3;
+      }
     }
   }
+
   @media (min-width: 768px) {
     position: relative;
     z-index: 2;
@@ -178,6 +227,7 @@
 .video-showcase__sub {
   margin-left: auto;
   margin-right: 31px;
+
   @media (min-width: 768px) {
     background: 0 0;
   }
