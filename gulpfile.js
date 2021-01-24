@@ -143,19 +143,20 @@ const watcher = () => {
   gulp.watch("source/*.html", gulp.series(html), sync.reload);
 }
 
-// //Build
+//Build
 
-// const build = gulp.series(
-// 	clean,
-// 	gulp.parallel(
-// 		styles,
-// 		sprite,
-// 		copy,
-// 		createWebp
-// 	)
-// )
+const build = gulp.series(
+	clean,
+	gulp.parallel(
+		styles,
+    sprite,
+    html,
+		copy,
+		createWebp
+	)
+)
 
-// exports.build = build;
+exports.build = build;
 
 //Default
 
