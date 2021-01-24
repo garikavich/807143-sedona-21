@@ -146,14 +146,14 @@ const watcher = () => {
 //Build
 
 const build = gulp.series(
-	clean,
-	gulp.parallel(
-		styles,
+  clean,
+  gulp.parallel(
+    styles,
     sprite,
     html,
-		copy,
-		createWebp
-	)
+    copy,
+    createWebp
+  )
 )
 
 exports.build = build;
