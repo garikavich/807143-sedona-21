@@ -5,3 +5,27 @@
   color: #000000;
   margin-right: 10px;
 }
+
+.copyright__link {
+  &:focus {
+    fill: #000000;
+    opacity: 0.3;
+    outline: none;
+  }
+
+  .copyright__icon-svg {
+    transition: all 0.2s linear;
+    fill: #000000;
+    opacity: 1;
+
+    &:hover {
+      fill: #81b3d2;
+    }
+
+    &:active {
+      fill: #000000;
+      opacity: 0.3;
+      outline: none;
+    }
+  }
+}

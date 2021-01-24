@@ -3,6 +3,7 @@
   margin-right: auto;
   max-width: 540px;
   padding-bottom: 44px;
+
   @media (min-width: 768px) {
     order: 5;
     padding: 0;
@@ -10,6 +11,7 @@
     max-width: 768px;
     margin-bottom: 49px;
   }
+
   @media (min-width: 1200px) {
     max-width: 1200px;
   }
@@ -17,31 +19,34 @@
 
 .form-textarea__title {
   @media (min-width: 768px) {
-    padding-top: 25px;
+    padding-top: 24px;
     display: flex;
     align-items: center;
     width: 100%;
-    &:before,
-    &:after {
-      content: '';
+
+    &::before,
+    &::after {
+      content: "";
       flex-grow: 1;
       flex-shrink: 0;
       width: 30px;
       height: 1px;
       background-color: #dbdbdb;
     }
-    &:before {
+
+    &::before {
       margin-right: 70px;
     }
-    &:after {
+
+    &::after {
       margin-left: 70px;
     }
   }
 }
 
 .form-textarea__description {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
-  border: none;
   background-color: #f2f2f2;
   width: 100%;
   height: 160px;
@@ -51,31 +56,45 @@
   font-weight: bold;
   border: 4px solid #f2f2f2;
   outline: none;
-  &:focus {
+
+  &:hover {
+    border-color: #e5e5e5;
+    background: #e5e5e5;
+  }
+
+  &:focus,
+  &:active {
     background: 0 0;
+
     &::-webkit-input-placeholder {
       color: transparent;
     }
   }
+
   &::-webkit-input-placeholder {
     /* WebKit browsers */
     color: @main-color-black;
   }
+
   &:-moz-placeholder {
     /* Mozilla Firefox 4 to 18 */
     color: @main-color-black;
   }
+
   &::-moz-placeholder {
     /* Mozilla Firefox 19+ */
     color: @main-color-black;
   }
+
   &:-ms-input-placeholder {
     /* Internet Explorer 10+ */
     color: @main-color-black;
   }
+
   @media (min-width: 768px) {
     margin-top: 60px;
   }
+
   @media (min-width: 1200px) {
     margin-top: 56px;
     padding-top: 13px;

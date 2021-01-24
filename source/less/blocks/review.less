@@ -5,6 +5,7 @@
     margin-right: auto;
     max-width: 768px;
   }
+
   @media (min-width: 1200px) {
     padding: 0 120px;
     margin-left: auto;
@@ -19,23 +20,28 @@
   position: relative;
   padding-right: 20px;
   padding-left: 20px;
-  &:before {
-    content: '';
+
+  &::before {
+    content: "";
     position: absolute;
     border-top: 1px solid #e5e5e5;
     top: 0;
     width: 100%;
     left: 0;
+
     @media (min-width: 768px) {
       display: none;
     }
   }
+
   @media (min-width: 768px) {
     width: 50%;
   }
 }
 
 .review__form {
+  font-family: "PT Sans", "Arial", sans-serif;
+
   @media (min-width: 768px) {
     display: flex;
     flex-direction: row;
@@ -47,6 +53,7 @@
 .review__wrapper-button {
   padding-right: 20px;
   padding-left: 20px;
+
   @media (min-width: 768px) {
     padding-left: 0;
     padding-right: 0;
@@ -60,6 +67,7 @@
 
 .review__text {
   display: none;
+
   @media (min-width: 768px) {
     display: block;
     width: 50%;
@@ -74,9 +82,11 @@
   margin: 0 auto;
   width: 100%;
   display: block;
+
   @media (min-width: 768px) {
     width: 50%;
   }
+
   @media (min-width: 1200px) {
     width: 52%;
     max-width: 478px;
@@ -90,10 +100,12 @@
   mix-blend-mode: normal;
   padding-top: 19px;
   text-transform: uppercase;
+
   @media (min-width: 768px) {
     font-size: 21px;
     padding-top: 30px;
   }
+
   @media (min-width: 768px) {
     padding-top: 13px;
   }

@@ -6,7 +6,8 @@
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 31px;
+
   @media (min-width: 768px) {
     padding: 0;
     display: flex;
@@ -29,80 +30,100 @@
 .features-list__item {
   padding: 10px 0 0 50px;
   position: relative;
+
   &.features-list__item--souvenir {
     @media (min-width: 768px) {
       padding-left: 32px;
       padding-right: 32px;
     }
   }
+
   &--housing {
     svg {
       position: absolute;
       left: 0;
       top: 25px;
+
       @media (min-width: 768px) {
         width: 75px;
         height: 72px;
       }
     }
+
     .feutures-list__title {
       padding: 23px 0 10px 0;
     }
+
     .features-list__description {
       padding: 10px 0;
+
       @media (min-width: 768px) {
         padding: 23px 0;
       }
+
       @media (min-width: 1200px) {
         padding-left: 20px;
         padding-right: 20px;
       }
     }
   }
+
   &--souvenir {
     svg {
       position: absolute;
       left: 5px;
       top: 2px;
+
       @media (min-width: 768px) {
         width: 76px;
         height: 68px;
       }
     }
+
     br {
       display: none;
+
       @media (min-width: 1200px) {
         display: block;
       }
     }
+
     .feutures-list__title {
       padding: 5px 0 7px 0;
     }
+
     .features-list__description {
       padding: 9px 0;
+
       @media (min-width: 768px) {
         padding: 23px 0 23px 0;
       }
     }
+
     @media (min-width: 768px) {
       order: 3;
     }
   }
+
   &--food {
     svg {
       position: absolute;
       left: -3px;
       top: 12px;
+
       @media (min-width: 768px) {
         width: 76px;
         height: 68px;
       }
     }
+
     .feutures-list__title {
       padding: 5px 0 7px 0;
     }
+
     .features-list__description {
       padding: 9px 0;
+
       @media (min-width: 768px) {
         padding: 23px 15px 23px 15px;
       }
@@ -112,16 +133,19 @@
   @media (min-width: 768px) {
     padding: 60px 36px 38px 36px;
     width: 33.33%;
+
     svg {
       left: 50%;
       top: 62px;
       transform: translateX(-50%);
     }
+
     .feutures-list__title {
       padding: 0;
       padding-top: 100px;
     }
   }
+
   @media (min-width: 1200px) {
     padding-bottom: 58px;
   }

@@ -1,8 +1,6 @@
-.social {
-}
-
 .social__item {
   margin: 5px;
+
   @media (min-width: 768px) {
     margin-right: 8px;
     margin-left: 0;
@@ -18,4 +16,13 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  .social__svg-icon {
+    fill: #ffffff;
+    opacity: 1;
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }

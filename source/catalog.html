@@ -3,7 +3,7 @@
   <head class="page">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <link rel="icon" sizes="32x32" href="favicon-32.png" />
     <link rel="icon" sizes="16x16" href="favicon-16.png" />
     <title>HTML Academy: Седона</title>
@@ -23,8 +23,8 @@
             <li class="site-list__item">
               <a href="index.html" class="site-list__link">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a href="catalog.html" class="site-list__link">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link">
                 Фото и видео
               </a>
             </li>
@@ -56,6 +56,7 @@
       <main class="page-main">
         <h1 class="visually-hidden">Каталог Седона с фото и видео</h1>
         <section class="cover">
+          <h2 class="visually-hidden">Главная обложка сайта с картинкой</h2>
           <img
             class="cover__img"
             src="img/sedona-logo.svg"
@@ -73,54 +74,59 @@
           </p>
         </section>
         <section class="catalog">
+          <h2 class="visually-hidden">
+            Каталог фотографий с количеством лайков
+          </h2>
           <ul class="catalog__list">
             <li class="catalog__item catalog__item--first-photo">
-              <picture>
-                <source
-                  type="image/webp"
-                  media="(min-width: 1200px)"
-                  srcset="
-                    img/photo-1-desktop.webp    1x,
-                    img/photo-1-desktop@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/photo-1-tablet.webp    1x,
-                    img/photo-1-tablet@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  srcset="
-                    img/photo-1-mobile.webp    1x,
-                    img/photo-1-mobile@2x.webp 2x
-                  "
-                />
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    img/photo-1-desktop.jpg    1x,
-                    img/photo-1-desktop@2x.jpg 2x
-                  "
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/photo-1-tablet.jpg    1x,
-                    img/photo-1-tablet@2x.jpg 2x
-                  "
-                />
-                <img
-                  src="img/photo-1-mobile.jpg"
-                  alt=""
-                  width="280"
-                  height="280"
-                  srcset="img/photo-1-mobile@2x.jpg 2x"
-                />
-              </picture>
+              <a href="">
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/photo-1-desktop.webp    1x,
+                      img/photo-1-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/photo-1-tablet.webp    1x,
+                      img/photo-1-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/photo-1-mobile.webp    1x,
+                      img/photo-1-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/photo-1-desktop.jpg    1x,
+                      img/photo-1-desktop@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/photo-1-tablet.jpg    1x,
+                      img/photo-1-tablet@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="img/photo-1-mobile.jpg"
+                    alt=""
+                    width="280"
+                    height="280"
+                    srcset="img/photo-1-mobile@2x.jpg 2x"
+                  />
+                </picture>
+              </a>
               <div class="catalog__author-wrapper">
                 <div class="catalog__author-info">
                   <p class="catalog__title">Неродные просторы</p>
@@ -135,52 +141,54 @@
               </div>
             </li>
             <li class="catalog__item">
-              <picture>
-                <source
-                  type="image/webp"
-                  media="(min-width: 1200px)"
-                  srcset="
-                    img/photo-2-desktop.webp    1x,
-                    img/photo-2-desktop@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/photo-2-tablet.webp    1x,
-                    img/photo-2-tablet@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  srcset="
-                    img/photo-2-mobile.webp    1x,
-                    img/photo-2-mobile@2x.webp 2x
-                  "
-                />
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    img/photo-2-desktop.jpg    1x,
-                    img/photo-2-desktop@2x.jpg 2x
-                  "
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/photo-2-tablet.jpg    1x,
-                    img/photo-2-tablet@2x.jpg 2x
-                  "
-                />
-                <img
-                  src="img/photo-2-mobile.jpg"
-                  alt=""
-                  width="280"
-                  height="280"
-                  srcset="img/photo-2-mobile@2x.jpg 2x"
-                />
-              </picture>
+              <a href="">
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/photo-2-desktop.webp    1x,
+                      img/photo-2-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/photo-2-tablet.webp    1x,
+                      img/photo-2-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/photo-2-mobile.webp    1x,
+                      img/photo-2-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/photo-2-desktop.jpg    1x,
+                      img/photo-2-desktop@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/photo-2-tablet.jpg    1x,
+                      img/photo-2-tablet@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="img/photo-2-mobile.jpg"
+                    alt=""
+                    width="280"
+                    height="280"
+                    srcset="img/photo-2-mobile@2x.jpg 2x"
+                  />
+                </picture>
+              </a>
               <div class="catalog__author-wrapper">
                 <div class="catalog__author-info">
                   <p class="catalog__title">Местная растительность</p>
@@ -195,52 +203,55 @@
               </div>
             </li>
             <li class="catalog__item">
-              <picture>
-                <source
-                  type="image/webp"
-                  media="(min-width: 1200px)"
-                  srcset="
-                    img/photo-3-desktop.webp    1x,
-                    img/photo-3-desktop@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/photo-3-tablet.webp    1x,
-                    img/photo-3-tablet@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  srcset="
-                    img/photo-3-mobile.webp    1x,
-                    img/photo-3-mobile@2x.webp 2x
-                  "
-                />
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    img/photo-3-desktop.jpg    1x,
-                    img/photo-3-desktop@2x.jpg 2x
-                  "
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/photo-3-tablet.jpg    1x,
-                    img/photo-3-tablet@2x.jpg 2x
-                  "
-                />
-                <img
-                  src="img/photo-3-mobile.jpg"
-                  alt=""
-                  width="280"
-                  height="280"
-                  srcset="img/photo-3-mobile@2x.jpg 2x"
-                />
-              </picture>
+              <a href="">
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/photo-3-desktop.webp    1x,
+                      img/photo-3-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/photo-3-tablet.webp    1x,
+                      img/photo-3-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/photo-3-mobile.webp    1x,
+                      img/photo-3-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/photo-3-desktop.jpg    1x,
+                      img/photo-3-desktop@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/photo-3-tablet.jpg    1x,
+                      img/photo-3-tablet@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="img/photo-3-mobile.jpg"
+                    alt=""
+                    width="280"
+                    height="280"
+                    srcset="img/photo-3-mobile@2x.jpg 2x"
+                  />
+                </picture>
+              </a>
+
               <div class="catalog__author-wrapper">
                 <div class="catalog__author-info">
                   <p class="catalog__title">Дорога на север</p>
@@ -255,52 +266,54 @@
               </div>
             </li>
             <li class="catalog__item">
-              <picture>
-                <source
-                  type="image/webp"
-                  media="(min-width: 1200px)"
-                  srcset="
-                    img/photo-4-desktop.webp    1x,
-                    img/photo-4-desktop@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/photo-4-tablet.webp    1x,
-                    img/photo-4-tablet@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  srcset="
-                    img/photo-4-mobile.webp    1x,
-                    img/photo-4-mobile@2x.webp 2x
-                  "
-                />
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    img/photo-4-desktop.jpg    1x,
-                    img/photo-4-desktop@2x.jpg 2x
-                  "
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/photo-4-tablet.jpg    1x,
-                    img/photo-4-tablet@2x.jpg 2x
-                  "
-                />
-                <img
-                  src="img/photo-4-mobile.jpg"
-                  alt=""
-                  width="280"
-                  height="280"
-                  srcset="img/photo-4-mobile@2x.jpg 2x"
-                />
-              </picture>
+              <a href="">
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/photo-4-desktop.webp    1x,
+                      img/photo-4-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/photo-4-tablet.webp    1x,
+                      img/photo-4-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/photo-4-mobile.webp    1x,
+                      img/photo-4-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/photo-4-desktop.jpg    1x,
+                      img/photo-4-desktop@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/photo-4-tablet.jpg    1x,
+                      img/photo-4-tablet@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="img/photo-4-mobile.jpg"
+                    alt=""
+                    width="280"
+                    height="280"
+                    srcset="img/photo-4-mobile@2x.jpg 2x"
+                  />
+                </picture>
+              </a>
               <div class="catalog__author-wrapper">
                 <div class="catalog__author-info">
                   <p class="catalog__title">Мост дьявола</p>
@@ -383,7 +396,7 @@
                 href=""
                 class="social__link button button--social social__link--twitter"
               >
-                <svg width="17" height="15">
+                <svg class="social__svg-icon" width="17" height="15">
                   <use xlink:href="img/sprite.svg#twitter"></use>
                 </svg>
                 <span class="visually-hidden">
@@ -396,7 +409,7 @@
                 href=""
                 class="social__link button button--social social__link--facebook"
               >
-                <svg width="9" height="19">
+                <svg class="social__svg-icon" width="9" height="19">
                   <use xlink:href="img/sprite.svg#facebook"></use>
                 </svg>
                 <span class="visually-hidden">
@@ -409,7 +422,7 @@
                 href=""
                 class="social__link button button--social social__link--youtube"
               >
-                <svg width="20" height="14">
+                <svg class="social__svg-icon" width="20" height="14">
                   <use xlink:href="img/sprite.svg#youtube"></use>
                 </svg>
                 <span class="visually-hidden">
@@ -421,16 +434,10 @@
         </div>
         <div class="page-footer__copyright copyright">
           <span class="copyright__text">Разработано</span>
-          <a
-            href="https://htmlacademy.ru/intensive/adaptive"
-            class="copyright__link"
-          >
-            <img
-              src="img/htmlacademy.svg"
-              width="27"
-              height="34"
-              alt="HTML ACADEMY"
-            />
+          <a href="https://htmlacademy.ru" class="copyright__link">
+            <svg class="copyright__icon-svg" width="27" height="35">
+              <use xlink:href="img/sprite.svg#academy"></use>
+            </svg>
           </a>
         </div>
       </footer>

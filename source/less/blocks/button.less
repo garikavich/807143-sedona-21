@@ -1,29 +1,51 @@
 .button {
+  font-family: "PT Sans", "Arial", sans-serif;
   vertical-align: top;
-  padding: 0;
-  border: none;
   outline: none;
   font-size: 0;
   cursor: pointer;
   border: none;
   padding: 0;
+
   &--primary {
     padding: 16px 10px;
     background: #81b3d2;
-    color: #fff;
+    color: #ffffff;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
     text-align: center;
-    transition: background 0.3s linear, color 0.3s linear;
+    transition: all 0.1s linear;
+
+    &:active,
+    &:focus {
+      background: #5496bd;
+      color: rgba(255, 255, 255, 0.3);
+    }
+
     &:hover {
       background: #669ec0;
     }
+
+    &[disabled] {
+      background: #e5e5e5;
+      cursor: auto;
+    }
   }
+
   &--social {
     background: #81b3d2;
     width: 46px;
     height: 48px;
     display: block;
+
+    &:hover {
+      background: #669ec0;
+    }
+
+    &:active,
+    &:focus {
+      background: #669ec0;
+    }
   }
 }

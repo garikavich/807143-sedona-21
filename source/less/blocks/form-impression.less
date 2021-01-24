@@ -4,6 +4,7 @@
   max-width: 540px;
   display: flex;
   flex-direction: column;
+
   @media (min-width: 768px) {
     order: 1;
     width: 50%;
@@ -15,10 +16,12 @@
 .form-impression__title {
   text-transform: uppercase;
   margin-bottom: 37px;
+
   @media (min-width: 768px) {
-	margin-bottom: 74px;
-	padding-top: 0;
+    margin-bottom: 74px;
+    padding-top: 0;
   }
+
   @media (min-width: 1200px) {
     padding-left: 80px;
   }
@@ -32,23 +35,25 @@
   padding-left: 65px;
   cursor: pointer;
   position: relative;
+
   @media (min-width: 768px) {
     margin-bottom: 53px;
     padding-left: 74px;
+
     &:last-of-type {
       margin-bottom: 0;
     }
   }
 }
 
-.form-impression__info > .form-impression__field {
-  display: none;
+.form-impression__field {
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .form-impression__info > .form-impression__field + * {
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     border-radius: 50%;
@@ -61,7 +66,25 @@
   top: -14px;
   left: 0;
   background-color: #f2f2f2;
+  transition: all 0.3s linear;
 }
+
+.form-impression__info:hover > .form-impression__field + *::before {
+  background-color: #e5e5e5;
+}
+
+.form-impression__info:active > .form-impression__field + *::before {
+  background-color: #d5d5d5;
+}
+
+.form-impression__info:focus > .form-impression__field + *::before {
+  background-color: #d5d5d5;
+}
+
+.form-impression__info:active > .form-impression__field:checked + *::before {
+  background-color: #d5d5d5;
+}
+
 .form-impression__info > .form-impression__field + *::after {
   top: 3px;
   left: 17px;
@@ -70,8 +93,17 @@
   background-color: #333333;
   transform: scale(0);
   transition: transform 0.3s ease;
+  opacity: 1;
+}
+
+.form-impression__info > .form-impression__field:focus + *::before {
+  background-color: #e5e5e5;
 }
 
 .form-impression__info > .form-impression__field:checked + *::after {
   transform: scale(1);
+}
+
+.form-impression__info:active > .form-impression__field + *::after {
+  opacity: 0.3;
 }

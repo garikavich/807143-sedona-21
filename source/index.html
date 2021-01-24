@@ -3,7 +3,7 @@
   <head class="page">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <link rel="icon" sizes="32x32" href="favicon-32.png" />
     <link rel="icon" sizes="16x16" href="favicon-16.png" />
     <title>HTML Academy: Седона</title>
@@ -20,7 +20,7 @@
             aria-label="Открыть меню"
           ></button>
           <ul class="page-header__nav-list site-list">
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--active">
               <a class="site-list__link">Главная</a>
             </li>
             <li class="site-list__item">
@@ -56,6 +56,7 @@
       <main class="page-main">
         <h1 class="visually-hidden">Седона - Небольшой городок в Аризоне</h1>
         <section class="cover">
+          <h2 class="visually-hidden">Главная обложка сайта с картинкой</h2>
           <img
             class="cover__img"
             src="img/text-index.svg"
@@ -195,7 +196,7 @@
                     type="image/webp"
                     media="(min-width: 1200px)"
                     srcset="
-                      img/photo-bridge-desktop.webp 1x,
+                      img/photo-bridge-desktop.webp    1x,
                       img/photo-bridge-desktop@2x.webp 2x
                     "
                   />
@@ -203,14 +204,14 @@
                     type="image/webp"
                     media="(min-width: 768px)"
                     srcset="
-                      img/photo-bridge-tablet.webp 1x,
+                      img/photo-bridge-tablet.webp    1x,
                       img/photo-bridge-tablet@2x.webp 2x
                     "
                   />
                   <source
                     type="image/webp"
                     srcset="
-                      img/photo-bridge.webp 1x,
+                      img/photo-bridge.webp    1x,
                       img/photo-bridge@2x.webp 2x
                     "
                   />
@@ -280,11 +281,12 @@
             <br />
             и мы покажем Вам лучшее предложения гостиниц в Седоне
           </p>
-          <button class="search-hotel__button button button--primary">
+          <button class="search-hotel__button button button--primary" disabled>
             Найти гостиницу
           </button>
         </section>
         <section class="map">
+          <h2 class="visually-hidden">Карта с местоположением Седоны</h2>
           <img
             src="img/map-desktop.jpg"
             alt="Карта местности Седона"
@@ -305,7 +307,7 @@
                 href=""
                 class="social__link button button--social social__link--twitter"
               >
-                <svg width="17" height="15">
+                <svg class="social__svg-icon" width="17" height="15">
                   <use xlink:href="img/sprite.svg#twitter"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Твитере</span>
@@ -316,7 +318,7 @@
                 href=""
                 class="social__link button button--social social__link--facebook"
               >
-                <svg width="9" height="19">
+                <svg class="social__svg-icon" width="9" height="19">
                   <use xlink:href="img/sprite.svg#facebook"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Фейсбуке</span>
@@ -327,7 +329,7 @@
                 href=""
                 class="social__link button button--social social__link--youtube"
               >
-                <svg width="20" height="14">
+                <svg class="social__svg-icon" width="20" height="14">
                   <use xlink:href="img/sprite.svg#youtube"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Ютубе</span>
@@ -337,16 +339,10 @@
         </div>
         <div class="page-footer__copyright copyright">
           <span class="copyright__text">Разработано</span>
-          <a
-            href="https://htmlacademy.ru/intensive/adaptive"
-            class="copyright__link"
-          >
-            <img
-              src="img/htmlacademy.svg"
-              width="27"
-              height="34"
-              alt="HTML ACADEMY"
-            />
+          <a href="https://htmlacademy.ru" class="copyright__link">
+            <svg class="copyright__icon-svg" width="27" height="35">
+              <use xlink:href="img/sprite.svg#academy"></use>
+            </svg>
           </a>
         </div>
       </footer>
