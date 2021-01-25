@@ -1,6 +1,6 @@
-.inner-page__body {
+.page-catalog {
   .cover {
-    height: 157px;
+    height: 155px;
     background-image: url("../img/back-mobile-form.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -9,8 +9,8 @@
 
     @media (min-width: 768px) {
       background-image: url("../img/back-desktop.jpg");
+      height: 289px;
       background-size: auto;
-      height: 290px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/back-tablet@2x.jpg");
@@ -18,7 +18,7 @@
     }
 
     @media (min-width: 1200px) {
-      height: 301px;
+      height: 302px;
     }
   }
 
@@ -26,54 +26,45 @@
     padding-bottom: 10px;
 
     @media (min-width: 768px) {
-      padding-bottom: 21px;
+      padding-bottom: 23px;
     }
   }
 
   .intro {
-    line-height: 25px;
-    padding-top: 4px;
-    padding-bottom: 12px;
-
     @media (min-width: 768px) {
-      padding-bottom: 86px;
-      padding-left: 40px;
-      padding-right: 40px;
-    }
-
-    @media (min-width: 1200px) {
-      padding-left: 41px;
-      padding-right: 41px;
-      padding-bottom: 57px;
+      padding-bottom: 59px;
+      padding-top: 12px;
     }
   }
 
   .intro__title {
+    font-size: 18px;
+    padding: 31px 10px 28px 10px;
+
     @media (min-width: 768px) {
       font-size: 30px;
-      padding: 60px 5px 30px;
+      padding: 48px 10px 37px 10px;
     }
 
     @media (min-width: 1200px) {
-      padding-top: 111px;
+      padding-top: 88px;
     }
   }
 
+  .intro__description {
+    padding-bottom: 15px;
+  }
+
   .page-footer {
-    padding-top: 76px;
+    padding-top: 0;
+    margin-top: -14px;
 
     @media (min-width: 768px) {
-      max-width: 768px;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 92px;
+      margin-top: -84px;
     }
 
     @media (min-width: 1200px) {
-      max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 99px;
+      margin-top: -42px;
     }
   }
 }
